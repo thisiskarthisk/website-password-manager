@@ -39,7 +39,7 @@ Step 1: Download or Clone the Repository
 
 
 **Copy code**
-git clone https://github.com/your-repo/website-password-manager-extension.git
+https://github.com/thisiskarthisk/website-password-manager.git
 
 Step 2: Load the Extension in Chrome
 Open Chrome and navigate to chrome://extensions/.
