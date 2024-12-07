@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Password Manager",
+  "version": "1.0",
+  "description": "Manage and securely store your passwords.",
+  "permissions": ["storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  }
+}

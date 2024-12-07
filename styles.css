@@ -1,0 +1,146 @@
+/* Basic Reset and Styling */
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #d38d8d, #e0e0e0);
+  }
+  
+  h1 {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  input{
+    width: 95%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .password-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .password-container input {
+    width: 85%;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .password-container .eye-icon {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+  }
+  
+  td button {
+    margin-left: 5px;
+  }
+  
+  /* Make the layout responsive */
+  @media (max-width: 600px) {
+    body {
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 16px;
+    }
+
+    input, button {
+      font-size: 14px;
+    }
+  
+    .password-container input {
+      width: 75%; /* Adjust input width on small screens */
+    }
+  
+    .password-container .eye-icon {
+      width: 10%;
+    }
+  
+    /* Stack table cells on smaller screens */
+    table, th, td {
+      font-size: 14px;
+    }
+  
+    td button {
+      font-size: 12px;
+      padding: 5px;
+    }
+      
+    table {
+      margin-top: 10px;
+    }
+    
+  }
+  
+  /* Media Query for Larger Screens */
+  @media (min-width: 601px) {
+    /* Desktop or tablet-specific styles */
+    .password-container input {
+      width: 80%; /* Give more space for the input field */
+    }
+  
+    .password-container .eye-icon {
+      width: 50%;
+    }
+  }
+  
+
+  
+  /* Copied Message */
+#copied-message {
+  display: none; /* Initially hidden */
+  text-align: center;
+  color: #4CAF50;
+  font-size: 14px;
+  margin-top: 10px;
+  position: fixed;
+  bottom: 20px; /* Positioned at the bottom of the screen */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  border: 1px solid #4CAF50;
+  border-radius: 5px;
+  padding: 8px 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
